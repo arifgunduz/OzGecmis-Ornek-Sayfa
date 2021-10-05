@@ -1,2 +1,2 @@
-# OzGecmis hazırlama
+# OzGecmis Ornek Sayfa
  
