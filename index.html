@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Öz Geçmiş</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+body{
+    background-color: #02485e;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+hr{
+    width: 90%;
+    margin:auto;
+    color: grey;
+
+}
+.container{
+    margin: 50px auto;
+    display: flex;
+    width: 90%;
+}
+aside ,main section{
+    background-color: white;
+    border: 1px solid #0c9600;
+    margin-right: 15px;
+    flex: 3;
+}
+main{
+    flex: 7;
+    
+}
+.resim1{
+    width: 100%;
+    height: auto;
+    
+}
+.isim1{
+   color: #5c5c5c;
+   font-size: 2vw;
+   margin: 5px;
+
+}
+.detay,.yetenek-liste{
+    font-size: 1.2vw;
+    padding: 25px;
+   list-style: none;
+   color: #0c9600;
+}
+.detay li{
+   margin: 15 px 0;
+
+}
+.detay li i{
+    margin: 0  10px;
+}
+.baslik-section{
+    color: #0c9600;
+    padding: 30px;
+    margin: 0px;
+    font-size: 1.6vw;
+
+}
+.yetenek-liste li{
+    margin: 15px 0px;
+}
+
+.progress{
+    height: 100%;
+    border-radius: 15px;
+    background-color:#0c9600;
+}
+
+.progress h4{
+    color: white;
+}
+aside i{
+    color: #02485e;
+}
+main i{
+    color:#02485e;
+}
+.data-detay{
+    width: 90%;
+    margin: auto;
+    padding: 40px 0px;
+
+}
+.data-detay h3{
+    color: #0c9600;
+    font-size: 1.5vw;
+    margin: 10px 0;
+}
+.data-detay > span {
+    color: #0c9600;
+    margin: 15px 0;
+    letter-spacing: 1px;
+    font-weight: bold ;
+}
+.yesil-span{
+    background-color: #0c9600;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: normal;
+}
+
+.data-detay p{
+    color: #0c9600  ;
+    margin: 10px 0px;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    font-size: 20px;
+}
+#first-section{
+    margin-bottom:50px ;
+}
+
+footer{
+    margin-top: 60px;
+    width: 100%;
+    height: 150px;
+    background-color: #0c9600;
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    font-weight: bold;
+    line-height: 2;
+
+}
+footer a{
+    color: white;
+    font-size: 1.6vw;
+    margin-right: 15px;
+    
+}
+
+.select1{
+    
+    width: 70%;
+    height: 40px;
+    font-size: 31px;
+    color: #000000;
+    background-color: #00a1ad34;
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.option1{
+    font-size: 31px;
+}
+.input-ad{
+    width: 64%;
+    font-size: 20px;
+    color: #000000;
+    background-color: #00a1ad34;
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.select2{
+    width: 54%;
+    height: 28px;
+    font-size: 20px;
+    color: #000000;
+    background-color: #00a1ad34;
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.option2{
+    font-size: 20px;
+}
+.select3{
+    width: 30%;
+    height: 26px;
+    font-size: 20px;
+    color: #000000;
+    background-color: #00a1ad34;
+    border-color: rgb(255, 255, 255);
+    margin-left: 5%;
+    border-radius: 5px;
+    
+}
+.option3{
+    font-size: 20px;
+}
+.input-mail{
+    width: 72%;
+    height: 28px;
+    font-size: 15px;
+    color: #000000;
+    background-color: #00a1ad34;
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-left: 5%;
+
+}
+.input-tlf{
+    width: 48%;
+    height: 28px;
+    font-size: 15px;
+    color: #0c9600;
+    background-color: #00a1ad34;
+    border-radius: 5px;
+    margin-left: 1%;
+    border-color: rgb(255, 255, 255);
+}
+.yüzde{
+    font-size: 12px;
+    margin-left: 17%;
+}
+.input3{
+   width: 73%;
+
+  
+}
+.vol1{
+    font-size: 15px;
+}
+.select4{
+    width: 60%;
+    height: 26px;
+    font-size: 20px;
+    color: #000000;
+    background-color: #00a1ad34;
+    border-color: rgb(255, 255, 255);
+    margin-left: 5%;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    
+
+
+}
+.lili1{
+    float: left;
+    color: #0c9600;
+}
+.lili2{
+    float: left;
+    margin-left: 20%;
+     color: #0c9600;
+}
+.hedef{
+  width: 100%;
+  color: #000000;
+    background-color: #00a1ad34;
+    border-color: rgb(255, 255, 255);
+  height: 80px;
+  text-indent: 20px;
+  border-radius: 5px;
+}
+
+.input-date{
+    color: #000000;
+    background-color: #00a1ad34;
+    border-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    
+    margin-bottom: 2%;
+}
+.gonder{
+    background-color:#0c9600;
+    width: 100%;
+    height: 45px;
+    
+    
+    font-size: 25px;
+}
+.temizle{
+    background-color:#0c9600;
+    width: 100%;
+    height: 45px;
+   
+    
+    font-size: 25px;
+}
+.div-gonder{
+    float: left;
+    width: 21%;
+    margin-left: 50%;
+    
+    margin-top: 1%; 
+    
+}
+.div-temizle{
+   
+    float: left;
+    margin-left: 3%;
+    width:21%;
+    
+    margin-top: 1%; 
+    
+}
+
+
+.ozgecmis{
+    text-align: center;
+    font-size: 60px;
+    color:#0c9600;
+
+
+}
+.ozgecmis2{
+    text-align: center;
+    color:#0c9600;
+}
+
+</style>
+</head>
+<body>
+    <h1 class="ozgecmis">Özgeçmiş Hazırlama</h1>
+    <h2 class="ozgecmis2">Boş Alanları Doldurunuz...</h2>
+<form action="">
+    <div class="container">
+        <aside>
+            <div >
+                <img class="resim1" src="bos.png" alt="" >
+                <a   href="#" onclick="document.getElementById('fileID').click(); return false;" /></a>
+                <input type="File" id="fileID" style="color: #0c9600; " />
+  
+
+            </div>
+            
+           
+            <h2 class="isim1">ÜNVAN:<select class="select1">
+                <option class="option1">Seçiniz</option>
+                <option class="option1">Bilgisayar Müh.</option>
+                <option class="option1">Yazılım Müh.</option>
+                <option class="option1">Makine Müh.</option>
+                <option class="option1">İnşaat Müh.</option>
+                <option class="option1">Endüstri Müh.</option>
+                </select></h2>
+
+            <h2 class="isim1">Ad-Soyad:<input class="input-ad" type="text" name="txtIsim"></h2>
+
+            <ul class="detay">
+                <li><i class="fas fa-user-alt"></i>Uzmanlık Alanı:<select class="select2">
+                    <option class="option2">Seçiniz</option>
+                    <option class="option2">Web prgramlama</option>
+                    <option class="option2">Yapay Zeka</option>
+                    <option class="option2">Yazılım Geliştirme</option>
+                    <option class="option2">Gömülü Sistemler</option>
+                    <option class="option2">Programlama Dilleri </option>
+                    <option class="option2">İşletim Sistemleri</option>
+                    <option class="option2">Robotik</option>
+                    <option class="option2">Mobil Sistemler</option>
+                    <option class="option2">------- </option>
+                    <option class="option2">Yapı </option>
+                    <option class="option2">Ulaştırma</option>
+                    <option class="option2">Yapım yönetimi  </option>
+                    <option class="option2">------- </option>
+                    <option class="option2">Mekanik bilimi</option>
+                    <option class="option2">Mekanik tesisat  </option>
+                    </select></h2></li> <br>
+
+                <li><i class="fas fa-map-marker-alt"></i>Ülke:<select class="select3" >
+                    <option class="option3">Seçiniz</option>
+                    <option class="option3">Türkiye</option>
+                    <option class="option3">Amerika</option>
+                    <option class="option3">İtalya</option>
+                    <option class="option3">Almanya</option>
+                    <option class="option3">Fransa</option>
+                    </select>    --
+                    <select class="select3">
+                        <option class="option3">Seçiniz</option>
+                        <option class="option3">İstanbul</option>
+                        <option class="option3">Ankara</option>
+                        <option class="option3">Hatay</option>
+                        <option class="option3">İzmir</option>
+                        <option class="option3">Adana</option>
+                        <option class="option3">Mersin</option>
+                        <option class="option3">------</option>
+                        <option class="option3">Colorado</option>
+                        <option class="option3">Florida</option>
+                        <option class="option3">Kansas</option>
+                        <option class="option3">New York</option>
+                        <option class="option3">------</option>
+                        <option class="option3">Hamburg</option>
+                        <option class="option3">Münih</option>
+                        <option class="option3">Köln</option>
+                        <option class="option3">Dortmund</option>
+                        <option class="option3">------</option>
+                        <option class="option3">Napoli</option>
+                        <option class="option3">Palermo</option>
+                        <option class="option3">Bolonya</option>
+                        <option class="option3">Vatikan</option>
+                        </select></li><br>
+
+                <li><i class="fas fa-envelope"></i>Mail:<input class="input-mail" type="text" name="txtIsim" ></li><br>
+
+                <li><i class="fas fa-phone-square-alt"></i>Telefon No: + 90<input class="input-tlf" type="tel" name="txtIsim" placeholder="(_ _ _)(_ _ _ _ _ _ _)"></li>
+
+            </ul>
+
+            <hr>
+
+            <h2 class="baslik-section"> <i class="fas fa-gem"></i>Yetenekler</h2>
+            <ul class="yetenek-liste"> 
+                <li>
+                    <select class="select4">
+                        <option class="option3">Seçiniz</option>
+                        <option class="option3">C#</option>
+                        <option class="option3">Java</option>
+                        <option class="option3">C++</option>
+                        <option class="option3">PYTHON</option>
+                        <option class="option3">PHP</option>
+                        <option class="option3">VİSUAL BASİC</option>
+                        <option class="option3">JAVASCRİPT</option>
+                        <option class="option3">GO</option>
+                        <option class="option3">RUBY</option>
+                        <option class="option3">GROOVY</option>
+                        <option class="option3">OBJECTİVE-C</option>
+                        <option class="option3">SWİFT</option>
+                        <option class="option3">AutoCad</option>
+                        </select>
+                    <div class="progress-back">
+                        <label for="vol" class="vol1">Seviye  0 <input type="range" id="vol" name="vol" min="0" max="100" class="input3">%100</label><br>
+                        <p class="yüzde">%10 | %20 | %30 | %40 | %50 | %60 | %70 | %80 | %90</p>
+                    </div>
+                </li>
+                <li>
+                    <select class="select4">
+                        <option class="option3">Seçiniz</option>
+                        <option class="option3">C#</option>
+                        <option class="option3">Java</option>
+                        <option class="option3">C++</option>
+                        <option class="option3">PYTHON</option>
+                        <option class="option3">PHP</option>
+                        <option class="option3">VİSUAL BASİC</option>
+                        <option class="option3">JAVASCRİPT</option>
+                        <option class="option3">GO</option>
+                        <option class="option3">RUBY</option>
+                        <option class="option3">GROOVY</option>
+                        <option class="option3">OBJECTİVE-C</option>
+                        <option class="option3">SWİFT</option>
+                        <option class="option3">AutoCad</option>
+                        </select>
+                    <div class="progress-back">
+                        <label for="vol" class="vol1">Seviye  0 <input type="range" id="vol" name="vol" min="0" max="100" class="input3">%100</label><br>
+                        <p class="yüzde">%10 | %20 | %30 | %40 | %50 | %60 | %70 | %80 | %90</p>
+                    </div>
+                </li>
+                <li>
+                    <select class="select4">
+                        <option class="option3">Seçiniz</option>
+                        <option class="option3">C#</option>
+                        <option class="option3">Java</option>
+                        <option class="option3">C++</option>
+                        <option class="option3">PYTHON</option>
+                        <option class="option3">PHP</option>
+                        <option class="option3">VİSUAL BASİC</option>
+                        <option class="option3">JAVASCRİPT</option>
+                        <option class="option3">GO</option>
+                        <option class="option3">RUBY</option>
+                        <option class="option3">GROOVY</option>
+                        <option class="option3">OBJECTİVE-C</option>
+                        <option class="option3">SWİFT</option>
+                        <option class="option3">AutoCad</option>
+                        </select>
+                    <div class="progress-back">
+                        <label for="vol" class="vol1">Seviye  0 <input type="range" id="vol" name="vol" min="0" max="100" class="input3">%100</label><br>
+                        <p class="yüzde">%10 | %20 | %30 | %40 | %50 | %60 | %70 | %80 | %90</p>
+                    </div>
+                </li>
+                <li>
+                    <select class="select4">
+                        <option class="option3">Seçiniz</option>
+                        <option class="option3">C#</option>
+                        <option class="option3">Java</option>
+                        <option class="option3">C++</option>
+                        <option class="option3">PYTHON</option>
+                        <option class="option3">PHP</option>
+                        <option class="option3">VİSUAL BASİC</option>
+                        <option class="option3">JAVASCRİPT</option>
+                        <option class="option3">GO</option>
+                        <option class="option3">RUBY</option>
+                        <option class="option3">GROOVY</option>
+                        <option class="option3">OBJECTİVE-C</option>
+                        <option class="option3">SWİFT</option>
+                        <option class="option3">AutoCad</option>
+                        </select>
+                    <div class="progress-back">
+                        <label for="vol" class="vol1">Seviye  0 <input type="range" id="vol" name="vol" min="0" max="100" class="input3">%100</label><br>
+                        <p class="yüzde">%10 | %20 | %30 | %40 | %50 | %60 | %70 | %80 | %90</p>
+                    </div>
+                </li>
+            </ul>
+              <!---------------------------------------------------------------------------------  -->
+            <hr>
+            <h2 class="baslik-section"> <i class="fas fa-gem"></i>DİLLER</h2>
+            <ul class="yetenek-liste"> 
+               <div class="lili1">
+                <li>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bikeasd">
+                    <label for="vehicle1"> İngilizce</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Almanca</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> İspanyolca</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Arapça</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Çince</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Rusça</label><br>
+                    
+                </li>
+            </div>
+                <div class="lili2" >
+
+                
+                <li >
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Japonca</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Fransızca</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> Hintçe</label><br>
+                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                    <label for="vehicle1"> Türkçe</label><br>
+                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                    <label for="vehicle2"> Flemenkçe</label><br>
+                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                    <label for="vehicle3"> İtalyanca</label><br>
+                </li>
+            </div>
+               
+            </ul>
+        </aside>
+    
+        <main>
+            <section id="first-section">
+                <h2 class="baslik-section"> <i class="fas fa-user-edit"></i></i>HAKKINDA</h2>
+                <div class="data-detay">
+             <h3>Hedef</h3>
+             
+             <textarea class="hedef" name="message" rows="10" cols="30"></textarea>
+                
+            </div>
+            <hr>
+           
+            <div class="data-detay">
+         <h3>EĞİTİM</h3>
+         <span><i class="far fa-calendar-alt"></i><input class="input-date" type="date" name="yas">-&-<input class="input-date" type="date" name="yas"></span>
+         <textarea class="hedef" name="message" rows="10" cols="30"></textarea>
+        </div>
+        <hr>
+      
+        <div class="data-detay">
+     <h3>İlgi Alanlarım</h3>
+     
+     <textarea class="hedef" name="message" rows="10" cols="30"></textarea>
+    </div>
+           
+    
+            </section>
+
+
+
+
+
+            <section>
+                <h2 class="baslik-section"> <i class="fas fa-briefcase"></i>İŞ DENEYİMİ</h2>
+                <div class="data-detay">
+             <h3>STAJ</h3>
+             <span><i class="far fa-calendar-alt"></i><input class="input-date" type="date" name="yas">-&-<input class="input-date" type="date" name="yas"></span></span>
+             <textarea class="hedef" name="message" rows="10" cols="30"></textarea>
+            </div>
+            <hr>
+           
+            <div class="data-detay">
+         <h3>Etkinlikler</h3>
+         <span><i class="far fa-calendar-alt"></i><input class="input-date" type="date" name="yas">-&-<input class="input-date" type="date" name="yas"></span></span>
+             <textarea class="hedef" name="message" rows="10" cols="30"></textarea>
+        </div>
+        <hr>
+      
+
+        <div class="data-detay">
+     <h3>Takım Çalışması/İletişim</h3>
+     
+     <textarea class="hedef" name="message" rows="10" cols="30"></textarea>
+
+    </div>
+
+
+    <div class="div-gonder"><input class="gonder" type="submit" value="Gönder" /></div>
+    <div class="div-temizle"><input class="temizle" type="reset" value="Temizle" /></div>
+     
+    
+     
+
+
+
+            </section>
+        </form>
+        </main>
+       
+    </div>
+<footer>
+    <p>Sosyal medyadan bana ulaşabilirsiniz.</p>
+    <a href="#"><i class="fab fa-instagram"> </i></a>
+    <a href="#"><i class="fab fa-twitter"> </i></a>
+    <a href="#"><i class="fab fa-facebook"> </i></a>
+    <a href="#"><i class="fab fa-github"> </i></a>
+</footer>
+
+
+   
+    
+</body>
+</html>

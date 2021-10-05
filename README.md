@@ -1,0 +1,2 @@
+# OzGecmis hazırlama
+ 
